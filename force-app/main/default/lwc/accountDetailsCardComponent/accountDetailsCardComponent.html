@@ -1,0 +1,84 @@
+<template>
+    <div>
+        <lightning-card icon-name="standard:account" >
+             <div slot="title">
+                Account <br/>
+                <b> Athena Home Products </b>
+             </div>
+             
+             <div slot="actions">
+                <lightning-button label="Follow" icon-name="utility:add" ></lightning-button> &nbsp; &nbsp;
+                <lightning-button-group>
+                    <lightning-button label="New Contact" va></lightning-button>
+                    <lightning-button label="New Case" ></lightning-button>
+                    <lightning-button label="New Note" ></lightning-button>
+                    <lightning-button-menu>
+                        <lightning-menu-item label="New Opporutnity" ></lightning-menu-item>
+                        <lightning-menu-item label="Change Owner" ></lightning-menu-item>
+                        <lightning-menu-item label="Check for New Data" ></lightning-menu-item>
+                        <lightning-menu-item label="Edit" ></lightning-menu-item>
+                        <lightning-menu-item label="Delete" ></lightning-menu-item>
+                        <lightning-menu-item label="Sharing Settings" ></lightning-menu-item>
+                        <lightning-menu-item label="View Account Hierarchy" ></lightning-menu-item>
+                    </lightning-button-menu>
+                    
+                </lightning-button-group>
+             </div>
+
+             <div>
+                <table>
+                    <tr>
+                        <th>Rating</th>
+                        <th>Industry</th>
+                        <th>Annual Revenue</th>
+                        <th>Account Type</th>
+                        <th>Ownership</th>
+                        <th>Contact Number</th>
+                        <th>Fax Number</th>
+                        <th>Account Number</th>
+                        <th>Billing City</th>
+                        <th>SLA</th>
+                        <th>Priority</th>
+                        <th>Active</th>
+                    </tr>
+                    <tr>
+                        <td>Hot</td>
+                        <td>Manufacturing</td>
+                        <td>$1,000,000</td>
+                        <td>Prospect</td>
+                        <td>Public</td>
+                        <td>(123) 456-7890</td>
+                        <td>(123) 456-7891</td>
+                        <td>ACC-001234</td>
+                        <td>San Francisco</td>
+                        <td>Gold</td>
+                        <td>High</td>
+                        <td>Yes</td>
+                    </tr>           
+                    <tr>
+                        <td>Cold</td>
+                        <td>Technology</td>
+                        <td>$500,000</td>
+                        <td>Customer</td>
+                        <td>Private</td>
+                        <td>(987) 654-3210</td>
+                        <td>(987) 654-3211</td>
+                        <td>ACC-005678</td>
+                        <td>Los Angeles</td>
+                        <td>Silver</td>
+                        <td>Medium</td>
+                        <td>No</td>
+                    </tr>         
+                </table>
+             </div>
+
+            <div slot="footer">
+                    <lightning-button label="New Contact" ></lightning-button>
+                    <lightning-button label="New Lead" ></lightning-button>
+                    <lightning-button label="New Opportunity" ></lightning-button>
+            </div>        
+        </lightning-card>>
+    
+
+    </div>
+</template>

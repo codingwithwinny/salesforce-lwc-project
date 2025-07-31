@@ -1,0 +1,11 @@
+div 
+{
+    border: 3px solid rgb(19, 44, 187);
+    border-radius: 10px;
+    margin: 100px 0 0 50px;
+    padding: 10px;
+    width: 1200px;
+    height: 500px;
+    background-color: rgb(230, 224, 173);
+    box-shadow: 5px 5px 10px gray;
+} 

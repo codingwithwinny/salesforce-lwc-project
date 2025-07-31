@@ -1,0 +1,102 @@
+/* Styling the lightning-card container */
+lightning-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    padding: 16px;
+}
+
+/* Title slot styling */
+div[slot="title"] {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #181818;
+    padding: 8px 16px;
+}
+
+div[slot="title"] b {
+    font-weight: 700;
+    color: #005fb2;
+}
+
+/* Actions slot styling */
+div[slot="actions"] {
+    display: flex;
+    gap: 8px;
+    padding: 8px 16px;
+}
+
+lightning-button {
+    --sds-c-button-brand-color-background: #005fb2;
+    --sds-c-button-brand-color-background-hover: #00396b;
+    --sds-c-button-text-color: #ffffff;
+    --sds-c-button-text-color-hover: #ffffff;
+    font-size: 0.875rem;
+}
+
+lightning-button-group {
+    display: flex;
+    gap: 4px;
+}
+
+lightning-button-menu {
+    --sds-c-button-brand-color-background: #005fb2;
+    --sds-c-button-brand-color-background-hover: #00396b;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.875rem;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f3f2f2;
+    font-weight: 600;
+    color: #181818;
+}
+
+td {
+    color: #333333;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Footer slot styling */
+div[slot="footer"] {
+    display: flex;
+    gap: 8px;
+    padding: 8px 16px;
+    justify-content: flex-end;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.75rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    div[slot="actions"], div[slot="footer"] {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

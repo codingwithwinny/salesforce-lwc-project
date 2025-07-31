@@ -1,0 +1,58 @@
+<template>
+    <div class="container">
+        <lightning-tabset title="Account Record Details" active-tab-value="tabActivities">
+            <lightning-tab label="Account Details" value="tabDetails">
+                <h1>Account Record Detailed Information</h1>
+            </lightning-tab>
+            <lightning-tab label="Related" value="tabRelated">
+                <h1>Related Child Records</h1>
+            </lightning-tab>
+            <lightning-tab label="Activities" value="tabActivities">
+                <lightning-tabset variant="vertical">
+                    <lightning-tab label="New Task" icon-name="action:new_task" value="newTask">
+                        <lightning-input type="text" label="Task Subject" required placeholder="Task Subject"></lightning-input>
+                        <lightning-input type="text" label="Task Description" placeholder="Task Description"></lightning-input>
+                        <lightning-input type="date" label="Task Due Date"></lightning-input>
+                        <p class="center">
+                            <lightning-button label="Create Task" variant="brand" onclick={createTask}></lightning-button>
+                        </p>
+                    </lightning-tab>
+                    <lightning-tab label="New Event" icon-name="action:new_event" value="newEvent">
+                        <h1>Create a New Event</h1>
+                    </lightning-tab>
+                    <lightning-tab label="Log a Call" icon-name="action:log_a_call" value="logCall">
+                        <h1>Log a Call</h1>
+                    </lightning-tab>
+                    <lightning-tab label="Send Email" icon-name="action:email" value="sendEmail">
+                        <h1>Send an Email</h1>
+                    </lightning-tab>
+                </lightning-tabset>
+            </lightning-tab>
+            <lightning-tab label="Chatter" value="tabChatter">
+                <lightning-tabset variant="scoped">
+                    <lightning-tab label="Post" icon-name="action:share_post" value="post">
+                        <lightning-input-rich-text label="Share an Update" placeholder="Enter your post"></lightning-input-rich-text>
+                        <p class="center">
+                            <lightning-button label="Share Post" variant="brand" onclick={sharePost}></lightning-button>
+                        </p>
+                    </lightning-tab>
+                    <lightning-tab label="Poll" icon-name="action:share_poll" value="poll">
+                        <lightning-input label="Question" placeholder="What would you like to ask?"></lightning-input>
+                        <lightning-input label="Choice 1" placeholder="Choice 1"></lightning-input>
+                        <lightning-input label="Choice 2" placeholder="Choice 2"></lightning-input>
+                        <p class="center">
+                            <lightning-button label="Submit Question" variant="brand-outline" onclick={submitPoll}></lightning-button>
+                        </p>
+                    </lightning-tab>
+                    <lightning-tab label="Question" icon-name="action:question_post_action" value="question">
+                        <lightning-input label="Question (up to 255 characters)" required placeholder="What would you like to know?"></lightning-input>
+                        <lightning-input-rich-text label="Details" placeholder="Add details here..."></lightning-input-rich-text>
+                        <p class="center">
+                            <lightning-button label="Ask the Question" variant="brand-outline" onclick={askQuestion}></lightning-button>
+                        </p>
+                    </lightning-tab>
+                </lightning-tabset>
+            </lightning-tab>
+        </lightning-tabset>
+    </div>
+</template>
